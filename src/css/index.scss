@@ -1,0 +1,307 @@
+@import "base.scss";
+/**nav**/
+.inner-header {
+    margin-top: 63px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 1px 1px 1px #cecece;
+}
+.fixed-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.navBox {
+    li.allType {
+        padding: 0;
+        color: #fff;
+        width: 180px;
+        height: 38px;
+    }
+    .navItem {
+        height: 36px;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 0 10px;
+        display: inline-block;
+        cursor: pointer;
+        color: #333;
+        line-height: 36px;
+        margin-right: 60px;
+        text-align: center;
+    }
+    .menuActive{
+        color:$themeColor;
+        border-bottom: 2px solid $themeColor;
+        padding-bottom: 10px;
+    }
+
+}
+.searchInputBox {
+    width: 370px;
+    height: 32px;
+    display: inline-block;
+    border: 1px solid $themeColor;
+    input {
+        width: 350px;
+        height: 32px;
+        border: none;
+    }
+}
+.searchBtn {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    line-height: 34px;
+    color: #fff;
+    width: 80px;
+    height: 34px;
+    background: $themeColor;
+    margin: 0;
+}
+
+.cart-head-btn {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    line-height: 34px;
+    color: $themeColor;
+    border: 1px solid $themeColor;
+    width: 120px;
+    height: 34px;
+    background:#fff ;
+}
+.num-pop {
+    background: #FF5C5C;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    -webkit-border-radius: 50% 50% 50% 0;
+    border-radius: 50% 50% 50% 0;
+    top: -8px;
+}
+.hot-tips {
+    top: -2px;
+    width: 25px;
+    right: -5px;
+}
+.cor-red, .cor-rede {
+    color: #FF5C5C;
+}
+.swiper-container {
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 245px;
+}
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0,0,0,0.2);
+}
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #FF5C5C;
+}
+
+/**热销产品**/
+.fixed-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.ad-item, .ml-22 {
+    margin-left: 22px;
+}
+.t-img{
+    background-color: rgb(255, 94, 143)
+}
+.s-item-container{
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+    width: 1009px;
+    border-right: 1px solid #cecece;
+    overflow: hidden;
+    .swiper-wrapper{
+        .s-item{
+             border-right: 1px solid #cecece;
+             width: 201px !important;
+             .s-item-img{
+                 height: 200px;
+                 margin: 0 auto;
+                 overflow: hidden;
+                 img{
+                     width: 100%;
+                     vertical-align: middle;
+                 }
+             }
+            .new-name-list{
+                height: 40px;
+                line-height: 20px;
+                overflow: hidden;
+                text-align: left;
+                word-break: break-word;
+                padding: 0 10px;
+                box-sizing: border-box;
+            }
+        }
+    }
+    .swiper-button-next-item, .swiper-button-prev-item {
+        position: absolute;
+        top: 50%;
+        width: 27px;
+        height: 44px;
+        margin-top: -22px;
+        z-index: 10;
+        cursor: pointer;
+        background-size: 27px 44px;
+        background-color:#333;
+        opacity: .1;
+        i{
+            font-size: 26px;
+            line-height: 44px;
+        }
+        &:hover{
+            opacity: .3;
+        }
+    } 
+    .swiper-button-prev-item{
+        right: 0;
+    }  
+}
+
+/**品牌专区**/
+.pinpai{
+    .pinpai-l{
+        width: 580px;
+        height: 510px;
+        background-color: rgb(236, 219, 255);
+    }
+    .pinpai-r{
+        .p-top,.p-bottom{
+            width: 610px;
+            height: 250px;
+        }
+        .p-top{
+            div{
+                height: 250px;
+                &:nth-child(1){
+                    background-color: rgb(255, 219, 236);
+                }
+                &:nth-child(2){
+                    background-color: rgb(220, 244, 255);
+                }
+            }
+        }
+        .p-bottom{
+            background-color: rgb(255, 222, 184);
+        }
+    }
+}
+
+/**热卖专区**/
+.r-container{
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+    width: 1009px;
+    border-right: 1px solid #cecece;
+    overflow: hidden;
+    .s-item{
+            border-right: 1px solid #cecece;
+            width: (1005px/5);
+            .s-item-img{
+                height: 200px;
+                margin: 0 auto;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    vertical-align: middle;
+                }
+            }
+        .new-name-list{
+            height: 40px;
+            line-height: 20px;
+            overflow: hidden;
+            text-align: left;
+            word-break: break-word;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+        &:last-child{
+            border-right: none;
+         }
+    }
+}
+
+/**分类头部**/
+.category_tit{
+    width: 150px;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 50px;
+    margin: 10px auto;
+    margin-bottom: 0px;
+    overflow: hidden;
+    color: #ff5e5e;
+}
+.category_tit:before, .category_tit:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    display: block;
+    background:#ff5e5e;
+    top: 23px;
+}
+.category_tit:after {
+    right: 0px;
+}
+
+.category_tit:before {
+    left: 0px;
+}
+
+.cate-l{
+    background-color: rgb(254, 161, 160)
+}
+.cate-r{
+    border-top: 1px solid #cecece;
+    .w-239px{
+        width: 239px;
+    }
+}
+.cate-item{
+    border-right: 1px solid #cecece;
+    // border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+    .s-item-img{
+        margin: 0 auto;
+        text-align: center;
+        img{
+            width: 100%;
+            vertical-align: middle;
+            height: 200px;
+            width: 200px;
+        }
+    }
+    .new-name-list{
+        height: 40px;
+        line-height: 20px;
+        overflow: hidden;
+        text-align: left;
+        word-break: break-word;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+}
+.g-bd{
+    border-color: #ccc;
+}

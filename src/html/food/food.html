@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="伙伴通，伙伴通官网，伙伴通首页">
+    <meta name="description" content="伙伴通致力于服务中小母婴实体店，是实体店提供0库存、0资金占用的母婴供应平台，国外优质商品进入中国市场的新通道。">
+    <title>食品-伙伴通</title>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.0/css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/dialog/dialog.css">
+    <link rel="stylesheet" href="../../css/food/food.css">
+
+</head>
+<body>
+        <!-- 头部开始-->
+        <div class="header clearfix bg-red pos-r">
+            <div class=" f-l pl-120">
+                <a href="#">
+                    <img src="http://www.huoban168.com.cn:80/static/images/logo.png" width="" height="60" class="d-b ml-30 mr-20">
+                </a>
+            </div>
+            <div>
+                <div class=" f-r pt-21 pb-21 cor-w ta-r ov-f height-20" style="width:300px;">
+                    <div class="d-ib pl-10 height-20 cor-3 w-120px of-h" title="爱婴岛珠海免税商场店">
+                        <span class="va-m">爱婴岛珠海免税商场店</span>
+                    </div>
+                    <div class="d-ib pr-10 mr-10 height-20 pl-10 pos-r br-2">
+                        <a href="">
+                            <b class="d-n" id="noticeNumWrap">
+                                <i class="iconfont cur-p cor-3 pos-a cor-red" style="font-size: 15px; left:18px; top: -4px;">&#xe692;</i>
+                                <span class="cor-red fs-14 notice-num"></span>
+                            </b>
+                        </a>
+                    </div>
+                    <div class="d-ib height-20 cur-p cor-3 mr-20" id="alertDig" onclick="alertDig()">
+                        设置<i class="icon iconfont ml-5">&#xe685;</i>
+                    </div>
+                </div>
+                <div class="pr-10 height-30 pt-15 fs-16 first-menu">
+                    <span class="mr-40 pos-r ta-c d-ib ml-30">
+                        <a href="" class="cor-3 cur-p">
+                            供应链中心
+                        </a>
+                    </span>
+                    <span class="mr-40 pos-r ta-c d-ib ">
+                        <a href="" class="cor-3 cur-p">订单</a>
+                    </span>
+                    <span class="mr-40 pos-r ta-c d-ib ">
+                        <a href="" class="cor-3 cur-p">
+                            报表信息
+                        </a>
+                    </span>
+                    <span class="mr-40 pos-r ta-c d-ib ">
+                        <a href="" class="cor-3 cur-p  active">
+                            商品订购
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- 导航栏开始 -->
+        <div class="inner-header pt-30 bg-w clearfix bb-1" id="navBox">
+            <div class="fixed-container">
+                <div class="clearfix" id="searchInputHeader">
+                    <div class="f-l">
+                        <img src="../../assets/images/baozhang.png">
+                    </div>
+                    <div class="f-r clearfix searchBox" id="searchHeaderWrap">
+                        <div class="clearfix">
+                            <div class="searchInputBox f-l">
+                                <input type="hidden" id="defaultKey" value="每日必抢">
+                                <input class="pl-10 pr-10 fs-12" id="searchkeyIpt" placeholder="每日必抢" autocomplete="off">
+                                <div class="autocomplete-suggestions history-list d-n">
+                                    <div class="autocomplete-suggestion clearfix">最近搜索
+                                        <div class="w-10 f-r ta-r d-ib" id="historyDelBtn"><i class="iconfont"></i></div>
+                                    </div>
+                                    <div id="historyItemList"> </div>
+                                </div>
+                            </div>
+                            <a class="searchBtn f-l" id="headerSearchBtn">搜索</a>
+                            <a class="cart-head-btn f-l ml-10" target="_blank" href="">
+                                <i class="iconfont mr-10" style="font-size: 16px">&#xe63b;</i>购物车
+                                <p class="pos-r ml-5 d-ib fs-12 num-pop" id="cartNumPop">2</p>
+                            </a>
+                        </div>
+                        <div class="w-100 mt-10" id="keywordsList">
+                            <p class="d-ib pr-14">
+                                <a href="" class="cor-9 cur-p">每日必抢</a>
+                            </p>
+                            <p class="d-ib pr-14">
+                                <a href="" class="cor-9 cur-p">嘉宝</a>
+                            </p>
+                            <p class="d-ib pr-14">
+                                <a href="" class="cor-9 cur-p">帮宝适</a>
+                            </p>
+                            <p class="d-ib pr-14 ">
+                                <a href="" class="cor-9 cur-p">中秋</a>
+                            </p>
+                            <p class="d-ib pr-14 ">
+                                <a href="" class="cor-9 cur-p">安慕希</a>
+                            </p>
+                            <p class="d-ib pr-14 ">
+                                <a href="" class="cor-9 cur-p">贝亲</a>
+                            </p>
+                            <p class="d-ib pr-14 ">
+                                <a href="" class="cor-9 cur-p">惠氏</a>
+                            </p>
+                            <p class="d-ib pr-14 ">
+                                <a href="" class="cor-9 cur-p">爱他美</a>
+                            </p>
+                            <p class="d-ib pr-14 ">
+                                <a href="" class="cor-9 cur-p">A2</a>
+                            </p>
+                            <p class="d-ib pr-14">
+                                <a href="" class="cor-9 cur-p">熊本士</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="w-100 mt-35 clearfix navBox pos-r ta-c mb-10">
+                    <li class="navItem pos-r">
+                        <a href="" >首页</a>
+                    </li>
+                    <li class="navItem pos-r">
+                        <a href="" class="menuActive">食品</a>
+                    </li>
+                    <li class="navItem senior-store pos-r">
+                        <a>纸品</a>
+                    </li>
+                    <li class="navItem senior-store pos-r">
+                        <a>用品</a>
+                    </li>
+                    <li class="navItem pos-r">
+                        <a href="">玩具</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--商品详情-->
+        <div class="clearfix fixed-container mt-245 pos-r">
+            <div class="shop-detail-title pt-10">
+                <p class="fs-12 cor-3">惠氏 > 惠氏较大婴儿配方奶粉900G</p>
+            </div>
+            <div class="f-l shop-detail-left pos-r">
+                <!-- Swiper -->
+                <div class="swiper-container gallery-top pos-r">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="//img.hicdn.cn/itemApply/201801/01031458048412.jpg@410" id="goodsImgBig" class="w-100 d-ib va-m">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="//img.hicdn.cn/itemApply/201801/01031457592671.jpg@410" id="goodsImgBig" class="w-100 d-ib va-m">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="//img.hicdn.cn/itemApply/201801/01031457523485.jpg@410" id="goodsImgBig" class="w-100 d-ib va-m">
+                        </div>
+                        <!-- <div class="swiper-slide">
+                            <img src="//img.hicdn.cn/itemApply/201801/01031457592671.jpg@410" id="goodsImgBig" class="w-100 d-ib va-m">
+                        </div> -->
+                    </div>
+                </div>
+                <div class="swiper-container gallery-thumbs pos-r">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="//img.hicdn.cn/itemApply/201801/01031458048412.jpg@410" id="goodsImgBig" class="w-100 d-ib va-m">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="//img.hicdn.cn/itemApply/201801/01031457592671.jpg@410" id="goodsImgBig" class="w-100 d-ib va-m">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="//img.hicdn.cn/itemApply/201801/01031457523485.jpg@410" id="goodsImgBig" class="w-100 d-ib va-m">
+                        </div>
+                        <!-- <div class="swiper-slide">
+                            <img src="//img.hicdn.cn/itemApply/201801/01031457592671.jpg@410" id="goodsImgBig" class="w-100 d-ib va-m">
+                        </div> -->
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+
+            </div>
+            <div class="f-l shop-detail-right pos-r">
+                <p class="cor-9 pt-10">荷兰 | 美素佳儿</p>
+                <p class="shop-title cor-3 pt-20 fs-18">
+                    惠氏启赋较大婴儿配方奶粉2段900G（新）
+                </p>
+                <div class="mt-35 w-100 sale-info-container clearfix pos-r">
+                    <div class="f-l cor-9 ml-10 sale-info-title fs-14 pos-r">
+                        <p>价格:</p>
+                    </div>
+                    <div class="f-l ml-10 sale-info clearfix">
+                        <span class="price fs-14 ">￥</span>
+                        <span class="fs-30 price ">123.00</span>
+                        <span class="line-through ml-10 cor-9 ">155.00</span>
+                    </div>
+                    <span class="clearfix"></span>
+                    <div class="f-l cor-9 ml-10 sale-info-title fs-14 pos-r">
+                        <p>促销:</p>
+                    </div>
+                    <div class="f-l ml-10 sale-info-activity clearfix">
+                       <div class="activity-info">
+                           <span>累计返</span>
+                           <p class="cor-9">[ 惠氏1、2段累计返利 ] 惠氏官方专用券</p>
+                       </div>
+                        <div class="activity-info">
+                            <span>满返</span>
+                            <p class="cor-9">每满6规格返42元,最高返42元,下单即返!活动截止2018年09月01日</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="buy-info-container clearfix pb-10 pt-10">
+                    <div class="lh-35px pt-5 pb-5  bg-lack  clearfix">
+                        <div class="f-l w-70px cor-9 ta-l fs-14">采购来源：</div>
+                        <div class="f-l w-598px cor-3 spec-node">
+                            <div class="features-item fs-14  d-ib"><span>爱婴岛中山</span></div>
+                        </div>
+                    </div>
+                    <div class="lh-35px pt-5 pb-5  bg-lack  clearfix">
+                        <div class="f-l w-70px cor-9 ta-l fs-14">段数：</div>
+                        <div class="f-l w-598px cor-3 spec-node">
+                            <div class="features-item fs-14  d-ib"><span>1段</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!--商品效期-->
+                <div class="buy-info-container clearfix pb-10 pt-10">
+                    <div class="lh-35px pt-5 pb-5  bg-lack  clearfix">
+                        <div class="f-l w-70px cor-9 ta-l fs-14">效期：</div>
+                        <div class="f-l w-598px cor-3 spec-node">
+                            <div class="features-item fs-14  d-ib"><span>19年2月</span></div>
+                            <div class="features-item fs-14  d-ib ml-5 g-bd"><span>19年3月</span></div>
+                            <div class="features-item fs-14  d-ib ml-5 g-bd"><span>19年4月</span></div>
+                        </div>
+                    </div>
+                    <div class="lh-35px pt-5 pb-5  bg-lack  clearfix">
+                        <div class="f-l w-70px cor-9 ta-l fs-14">数量：</div>
+                        <div class="f-l w-598px clearfix ta-c cor-9 num-warp pt-5">
+                            <div class="f-l b-1 h-25px mt-5 w-25px us-n cur-p reduce-btn cor-9" style="border-right: 0px;">
+                                <i class="iconfont" style="font-size: 14px">&#xe663;</i>
+                            </div>
+                            <input type="text" value="1" class="f-l w-40px h-25px mt-5 ta-c num-input cor-9"  readonly="readonly">
+                            <div class="f-l b-1 h-25px mt-5 w-25px us-n cur-p add-btn cor-9" style="border-left: 0px;">
+                                <i class="iconfont" style="font-size: 14px">&#xe634;</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--购买按钮-->
+                <div class="clearfix mt-30 ta-c fs-16 pos-r">
+                    <div class="buy-btn f-l cur-p">立即购买</div>
+                    <div class="buy-btn f-l ml-20 cur-p add-car-btn">加入购物车</div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix fixed-container pos-r">
+            <div class="f-l w-198px clearfix mt-30 b-1">
+                <div class="h-40px fs-14 bg-f9 ta-c va-m pb-1">
+                    热销产品
+                </div>
+                <div class="detail-hot-item">
+                    <img src="http://192.168.17.74:8082/upload/goods/middle/6927108060573_1.jpg" alt="">
+                    <p class="mt-10">美素佳儿金装 900G (新包装)</p>
+                    <p class="fs-14 mt-10 cor-price">￥247</p>
+                </div>
+                <div class="detail-hot-item">
+                    <img src="http://192.168.17.74:8082/upload/goods/middle/3760179012330_1.jpg" alt="">
+                    <p class="mt-10">美素佳儿金装 900G (新包装)</p>
+                    <p class="fs-14 mt-10 cor-price">￥247.99</p>
+                </div>
+                <div class="detail-hot-item">
+                    <img src="http://192.168.17.74:8082/upload/goods/middle/6927108060573_1.jpg" alt="">
+                    <p class="mt-10">美素佳儿金装 900G (新包装)</p>
+                    <p class="fs-14 mt-10 cor-price">￥247.00</p>
+                </div>
+                <div class="detail-hot-item">
+                    <img src="http://192.168.17.74:8082/upload/goods/middle/6927108060573_1.jpg" alt="">
+                    <p class="mt-10">美素佳儿金装 900G (新包装)</p>
+                    <p class="fs-14 mt-10 cor-price">￥247.23</p>
+                </div>
+            </div>
+            <div class="f-l w-980px clearfix mt-30 ml-20">
+                <div class="h-40px bg-f9 w-100 ta-c b-1 fs-14 cor-3">
+                    <ul>
+                        <li class="f-l w-106px detail-activity cor-w">商品信息</li>
+                        <li class="f-l w-106px">商品详情</li>
+                        <li class="f-l w-106px">购买须知</li>
+                    </ul>
+                </div>
+                <div class="mt-10 cor-6 pb-40 pt-20 pb-1 clearfix">
+                    <p class="pl-42px pb-10">品牌:惠氏（Wyeth）</p>
+                    <div class="clearfix">
+                        <ul>
+                            <li class="w-200px f-l pl-42px mb-5">商品名称：惠氏奶粉</li>
+                            <li class="w-200px f-l pl-42px mb-5">商品编号：2165632</li>
+                            <li class="w-200px f-l pl-42px mb-5">商品毛重：0.52kg</li>
+                            <li class="w-200px f-l pl-42px mb-5">商品产地：爱尔兰</li>
+                            <li class="w-200px f-l pl-42px mb-5">国产/进口：进口</li>
+                            <li class="w-200px f-l pl-42px mb-5">净含量：0-400g</li>
+                            <li class="w-200px f-l pl-42px mb-5">适用年龄：12-18个月，18-36个月</li>
+                            <li class="w-200px f-l pl-42px mb-5">包装单位：罐装</li>
+                            <li class="w-200px f-l pl-42px mb-5">配方：普通配方奶粉</li>
+                            <li class="w-200px f-l pl-42px mb-5">分类：牛奶粉</li>
+                            <li class="w-200px f-l pl-42px mb-5">奶源地：爱尔兰</li>
+                            <li class="w-200px f-l pl-42px mb-5">段位：3段</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix m-auto pos-r w-750px bt-1 mt-30-i">
+                    <div class="fs-18 ta-c pos-a t-10 l-348 bg-w pl-20 pr-20">商品详情</div>
+                    <div class="mt-30 w-750px">
+                        <img src="http://192.168.17.74:8082/upload/goods/detail/7613035260290_1.jpg" alt="" class="w-100 pb-10 pt-10 bb-dashed">
+                        <img src="http://192.168.17.74:8082/upload/goods/detail/7613035260290_2.jpg" alt="" class="w-100 pb-10 pt-10 bb-dashed">
+                        <img src="http://192.168.17.74:8082/upload/goods/detail/7613035260290_3.jpg" alt="" class="w-100 pb-10 pt-10 bb-dashed">
+                        <img src="http://192.168.17.74:8082/upload/goods/detail/7613035260290_4.jpg" alt="" class="w-100 pb-10 pt-10 bb-dashed">
+                        <img src="http://192.168.17.74:8082/upload/goods/detail/7613035260290_5.jpg" alt="" class="w-100 pb-10 pt-10 bb-dashed">
+                        <img src="http://192.168.17.74:8082/upload/goods/detail/7613035260290_6.jpg" alt="" class="w-100 pb-10 pt-10 bb-dashed">
+                        <img src="http://192.168.17.74:8082/upload/goods/detail/7613035260290_7.jpg" alt="" class="w-100 pb-10 pt-10 bb-dashed">
+                        <img src="http://192.168.17.74:8082/upload/goods/detail/7613035260290_8.jpg" alt="" class="w-100 pb-10 pt-10 bb-dashed bd-none">  
+                    </div>
+                </div>
+                <div class="clearfix m-auto pos-r w-750px bt-1 mt-30-i">
+                    <div class="fs-18 ta-c pos-a t-10 l-348 bg-w pl-20 pr-20">购买须知</div>
+                    <div class="mt-30 w-750px">
+                        
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+</body>
+</html>
+<script src="../../assets/js/jquery-2.1.4.min.js"></script>
+<script src="../../js/dialog.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.0/js/swiper.min.js"></script>
+<script>
+    function alertDig() {
+            var d = dialog({
+                content: '<div><p>111</p><p>111</p><p>111</p><p>111</p>',
+                quickClose: true// 点击空白处快速关闭
+            });
+            d.show(document.getElementById('alertDig'));
+        }
+</script>
+<script>
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        loop: false,
+        freeMode: true,
+        loopedSlides: 4, //looped slides should be the same
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        loop: false,
+        loopedSlides: 3, //looped slides should be the same
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+            swiper: galleryThumbs,
+        },
+    });
+</script>

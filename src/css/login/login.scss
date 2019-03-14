@@ -1,0 +1,240 @@
+.head-item {
+    position: absolute;
+    left: -15px;
+    top: 0;
+    background: #fff;
+    height: 155px;
+    right: -15px;
+    text-align: center;
+    border: 1px solid #e9e9e9;
+    z-index: 99;
+}
+.box-head img{
+    height: 60px;
+}
+.box-wrap {
+    // width: 960px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.login-bg {
+    height: 480px;
+    width: 100%;
+    background: url(//staticonline.hipac.cn/mallpc/login/shouyetoutu.png) center center;
+    // background: url( http://106.14.200.58/img/upload/index/ad_bg0.jpg) center center;
+   
+}
+
+.login-phone-img {
+    width: 340px;
+    height: 400px;
+    left: -156px;
+    top: 80px;
+}
+.login-phone-img img {
+    width: 100%;
+}
+.login-text-img {
+    width: 260px;
+    height: 210px;
+    left: 212px;
+    top: 160px;
+}
+
+.pos-login {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.h-800px {
+    height: 480px;
+}
+.login-text-img {
+    width: 260px;
+    height: 210px;
+    left: 212px;
+    top: 160px;
+    img{
+        width: 100%;
+    }
+}
+.login-box {
+    height: 360px;
+    width: 400px;
+    top: 50%;
+    margin-top: -180px;
+    right: 20px;
+    background: rgba(255,255,255,.9)!important;
+    filter: Alpha(opacity=90);
+    background: #fff;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.login-box-wrap {
+    position: relative;
+}
+
+.jm-wrap {
+    right: 0;
+    top: 1px;
+    color: #999;
+}
+.jm-text {
+    font-size: 14px;
+    color: #ff5e8f;
+}
+
+.ipt-wrap {
+    position: relative;
+    margin-top: 15px;
+    background: #fff;
+}
+
+.ipt-wrap .login-ipt {
+    border: 1px solid #ececec;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding-right: 20px;
+    padding-left: 40px;
+    width: 300px;
+    height: 46px;
+    font-size: 14px;
+    line-height: 46px;
+    color: #444;
+    background: #fff;
+}
+.ipt-wrap .placeholder {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    font-size: 14px;
+    color: #b2b2b2;
+    -webkit-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+.ipt-wrap .ipt-icon {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    color: #b2b2b2;
+}
+.login-yzm {
+    width: 170px!important;
+    padding-left: 10px!important;
+}
+
+.login-btn {
+    margin-top: 15px;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #ff5e8f;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.fs-fw {
+    // position: absolute;
+    right: 0;
+    top: 8px;
+    color: #666;
+    cursor: pointer;
+}
+.fs-phone {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    color: #ed3a4a;
+    cursor: pointer;
+}
+
+.head-name {
+    height: 60px;
+    line-height: 60px;
+    color: #333;
+}
+.text-dl {
+    margin: 0 auto;
+    width: 1200px;
+    dd {
+        width: 300px;
+        text-align: center;
+        // color: #666;
+        // margin-left: 12px;
+        // padding: 40px 15px 30px;
+        padding-top: 50px;
+        border-top:2px solid #f2f2f2;
+        // border: 1px solid #f2f2f2;
+        background: #fff;
+        img{
+            padding-bottom: 10px;
+        }
+        p {
+            height: 28px;
+            line-height: 28px;
+            // font-size: 16px;
+            font-size: 22px;
+            // color: #666;
+        }
+    }
+}
+
+.img-bg {
+    // background: url(//staticonline.hipac.cn/mallpc/login/abhipac.png) center center;
+    height: 480px;
+}
+
+.text-group {
+    a{
+        cursor: pointer;
+    }   
+} 
+.partner {
+    a{
+        img{
+            width: 175px;
+            height: 70px;
+            -webkit-transition: all .5s;
+            transition: all .5s;
+        }
+    }   
+}
+.login-btm {
+    height: 60px;
+    background: #dc3e67;
+    color: #fff;
+    padding: 20px;
+    .boxs {
+        width: 262px;
+        border: 1px solid #fff;
+        padding: 6px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        cursor: pointer;
+        i {
+            font-size: 30px!important;
+            margin-right: 10px;
+            padding: 5px;
+        }
+    }
+}
+.boxs-wrap {
+    width: 650px;
+    margin: 0 auto;
+    .boxs:hover {
+        background: #FFF;
+        color: #dc3e67;
+        border-color: #dc3e67;
+    }
+}
+
+
