@@ -1,4 +1,4 @@
-# 基于bootstarp 和jquery 的左侧可折叠菜单
+# 基于bootstrap 和jquery 的左侧可折叠菜单
 
 ## 运行
 
